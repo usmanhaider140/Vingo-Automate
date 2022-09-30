@@ -1,0 +1,12 @@
+# Dependencies
+node_modules
+# yarn error logs
+yarn-error.log
+/src/**/database.json
+# Environment varibales
+.env*
+!.env*.example
+.vscode
+# Code coverage
+coverage
+src/public/csv/*
