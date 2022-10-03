@@ -16,11 +16,12 @@ class Login(WebDriverSetup):
         loginPage =LoginPage(driver)
         loginPage.setEmailText("admin@gmail.com")
         loginPage.setPasswordText("admin@123")
+        sleep(2)
         loginPage.submitForm()
-        sleep(10)
+        sleep(5)
         
 
-
+   
 
 if __name__ == '__main__':
     unittest.main()
