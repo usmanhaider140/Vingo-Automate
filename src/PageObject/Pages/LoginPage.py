@@ -16,10 +16,18 @@ class Login(object):
         self.submit = driver.find_element(By.ID, Locator.submit)
 
     def getEmailText(self):
-        return self.search_text
+        return self.email
 
     def getPasswordText(self):
-        return self.search_text
+        return self.password
 
+    def setEmailText(self,text):
+        return self.email.send_keys(text)
+
+    def setPasswordText(self,text):
+        return self.password.send_keys(text)
+
+    def submitForm(self):
+        return self.submit.click()
     def getSubmit(self):
         return self.submit

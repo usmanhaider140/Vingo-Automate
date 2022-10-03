@@ -2,8 +2,6 @@ import testtools as testtools
 import sys
 import os
 sys.path.append(os.path.join(sys.path[0], "../.."))
-print(sys.path)
-
 
 from  Test.Scripts.test_Login import Login
 
